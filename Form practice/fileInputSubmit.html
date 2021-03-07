@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--File input/Submit 
+Create a form used for submitting "Then VS Now" dieting/workout images and a description
+The form should contain two file input fields
+Both of the fields are file inputs
+They are used by the user for uploading the pictures of them and showing what they looked like before they started working out, and how they look now
+The page has to have an area where the user can put a picture description
+At the end of the form, there should be a submit button with text "Send" that is used to submit the form
+The form is submitted on page "handle-upload.html" and the user is redirected to it upon pressing the button
+This page should contain just a "Form submitted successfully"! message-->
+<head>
+    <title>File Input/Submit</title>
+</head>
+<body>
+    <h1 align="center">Skinny Me Bootcamp Challenge</h1>
+    <p align="center">Hello and welcome!
+        <br>
+        It's been a wonderful journey here and we are proud that we managed to cross the finish line together.
+        <br>
+        Send us your progress update and get rewarded!
+    </p>
+    <br>
+    <form align="center">
+        Before
+        <input type="file">
+        <textarea cols="20" rows="4" placeholder="Describe your previous habits and feelings at this time"></textarea>
+    <br>
+        After
+        <input type="file">
+        <textarea cols="20" rows="4" placeholder="Tell us more about your journey and your final results"></textarea>
+        <br><br>
+    <input type="submit" name="Submit" value="Submit" formaction="./handle-upload.html">
+    </form>
+</body>
+</html>

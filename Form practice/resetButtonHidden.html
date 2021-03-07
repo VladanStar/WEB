@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--Reset/Button/Hidden
+Create a form that contains multiple elements (text, textarea, radio)
+At the end of the form, there are two buttons:
+The first one is a reset button used for resetting form
+The second button contains an image and text inside it (it's a submit button-->
+<head>
+    <title>Forms</title>
+</head>
+<body>
+    <h1 align="center">Hogwarts Application Form</h1>
+    <br>
+    <p align="center">
+        Welcome to Hogwarts School of Witchcraft & Wizardry. The feast is about to begin in the Great Hall where the Sorting Ceremony will take place. Please wait here in the Entrance Hall while I announce you!
+    </p>
+    <form align="center" action="./thanks.html">
+        <p>Your name</p> 
+        <input type="name">
+        <p>Litlle bit about you</p>
+        <textarea cols="20" rows="4" placeholder="Write your bio here"></textarea>
+    
+    
+        <p>Your proficiency in magic:</p>
+        <br>
+        <input type="radio" name="proficiency" value="expert">Expert
+        <input type="radio" name="proficiency" value="intermediate">Intermediate
+        <input type="radio" name="proficiency" value="beginner">Beginner
+    <br><br><br>
+        <button type="reset" style="height: 40px; vertical-align: top;">Reset</button>
+        <button style="height: 40px; vertical-align: top;">
+        <img src="https://assets.dryicons.com/uploads/icon/svg/11451/9a2ae873-1c8c-42a7-825f-3d5a731c5f57.svg"  height="20">Send Owl
+    </button>
+    </form>
+</body>
+</html>

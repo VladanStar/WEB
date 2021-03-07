@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- Textarea/Radio/Checkbox
+Create a page that simulates a school quiz, containing multiple questions:
+The first question should contain multiple options out of which the student can select only one
+The second quiz question has multiple options out of which the user can select several
+The third question should require from user to insert some long text -->
+<head>
+    <title>School Quiz</title>
+</head>
+<body>
+    <h1>First Semester Evaluation</h1>
+    <p>Please answer the following questions:</p>
+    <form action="./submit.html" method="POST">
+        <p>1. What was your favorite subject?</p>
+        <input type="radio" name="subject" value="Math" checked="checked">Math
+        <input type="radio" name="subject" value="English">English
+        <input type="radio" name="subject" value="Biology">Biology
+        <input type="radio" name="subject" value="Chemistry">Chemistry
+    
+    <p>2. Which countries would you like to see on your next school trip?</p>
+    <input type="checkbox" name="country" value="Spain">Spain
+    <input type="checkbox" name="country" value="Italy">Italy
+    <input type="checkbox" name="country" value="France">France
+    <input type="checkbox" name="country" value="Germany">Germany
+    <input type="checkbox" name="country" value="USA">USA
+    <p>3. Please tell us your suggestions (what would you like to include in the students' activity list)?</p>
+    <textarea name="comments" cols="20" rows="4" placeholder="Enter your suggestions here"></textarea> 
+    <br>
+    
+    <input type="submit" name="Submit" value="Submit" formaction="thanks.html" formtarget="_blank">
+</form>
+</body>
+</html>
