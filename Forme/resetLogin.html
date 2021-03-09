@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--
+        Reset/Button/Hidden
+● Create a form that contains multiple elements (text, textarea, radio)
+● At the end of the form, there are two buttons:
+○ The first one is a reset button used for resetting form
+○ The second button contains an image and text inside it (it&#39;s a submit
+button)
+    -->
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Reset Button Hidden</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <form method="GET" action="poslato.html">
+        <label for="login">Enter login data</label>
+        <input type="text" name="tekst" id="text" placeholder="" value="username"><br><br>
+        <label for="gender">Choose your gender</label><br>
+        <input type="radio" id="radio1" name="radio" value="Male" checked>Male <br>
+        <input type="radio" id="radio2" name="radio" value="Female">Female
+        <br>
+        <input type="radio" id="radio3" name="radio" value="Other">Other
+        <br>
+        <br>
+        <p>Reset Button</p>
+        <input type="reset" name="reset" value="RESET">
+        <br><br>
+        <input type="image" src="images.jpg" width="70px" height="70px">
+        <input type="hidden" name="hidden" id="hidden">
+
+
+
+
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--
+        Labels/Grouping
+● Creates a form used for catering reservations
+
+● The form contains multiple elements split into groups
+● Each element should have a label assigned to it
+First group
+● Name of the group should be &quot;Personal data&quot;
+● The first field is for the name
+● The second one is for the email address
+● The third is for the phone number
+    -->
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Labels Grouping</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body bgcolor="lightblue">
+    <form>
+        <p>Cetering reservations</p>
+        <fieldset>
+
+            <legend>Personal data</legend>
+            <br><br>
+            <label for="fname">First name:</label>
+            <input type="text" name="fname" id="fname" placeholder="first name" required>
+            <br><br>
+            <label for="lname">Last name</label>
+            <input type="text" name="lname" id="lname" placeholder="last name" required>
+            <br><br>
+            <label for="email">Your email:</label>
+            <input type="email" name="email" id="email" placeholder="e mail" required><br><br>
+            <label for="phone">Your phone</label>
+            <input type="tel" name="phone" id="phone" placeholder="phone" required>
+            <br><br>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Location</legend>
+            <br><br>
+            <label>City:</label>
+            <select>
+                <option value="Beograd">Beograd</option>
+                <option value="Novi Sad">Novi Sad</option>
+                <option value="Kragujevac">Kragujevac</option>
+                <option value="Nis">Nis</option>
+                <option value="Valjevo">Valjevo</option>
+                <option value="Kraljevo">Kraljevo</option>
+                <option value="Krusevac">Krusevac</option>
+                <option value="Zajecar">Zajecar</option>
+                <option value="Zrenjanin">Zrenjanin</option>
+                <option value="Cacak">Cacak</option>
+                <option value="Uzice">Uzice</option>
+                <option value="Pozarevac">Pozarevac</option>
+                <option value="Bor">Bor</option>
+                <option value="Pancevo">Pancevo</option>
+                <option value="Pirot">Pirot</option>
+                <option value="Sremska Mitrovica">Sremska Mitrovica</option>
+            </select>
+            <br><br>
+            <label for="street">Street</label>
+            <input type="text" name="street" id="street" required placeholder="street">
+            <br><br>
+            <label for="home">Home numb</label>
+            <input type="text" name="home" id="home" required placeholder="home number">
+
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <br><br>
+            <legend>Event info</legend>
+            <label for="date">Birthday: </label>
+            <input type="date" name="date" id="date">
+            <br><br>
+            <label for="day">Wedding Day: </label>
+            <input type="datetime-local">
+            <br><br>
+            <label for="company">Company</label>
+            <input type="text" name="company" id="company" placeholder="company">
+            <br><br>
+            <label for="number">Number of expected guests</label>
+            <input type="number" name="numb" id="number" placeholder="500" min="0" max="800" step="10">
+            <br><br>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
