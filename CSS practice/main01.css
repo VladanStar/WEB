@@ -1,0 +1,18 @@
+#first-p {
+color: darkturquoise;
+background-color: rgb(7, 78, 114);
+opacity: 0.5;
+}
+
+#second-p {
+color: rgb(0,206,209);
+background-color: rgba(27, 91, 134, 0.5);
+}
+#third-p {
+color: #06555f;
+background-color: rgb(175, 221, 235);
+}
+
+p {
+padding: 5px;
+}
