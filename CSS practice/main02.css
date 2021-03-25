@@ -1,19 +1,30 @@
 .table {
     border: 1px solid;
-    width: 600px;
+    width: 1000px;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #b22222;
+    font-weight: bold;
+    font-stretch: extra-expanded;
 }
 .blue {
     background-color:aliceblue;
+    width: 20%;
 }
 .pink {
     background-color: hotpink;
+    width: 20%;
 }
 .yellow {
     background-color: rgb(135, 222, 139);
+    width: 20%;
 }
 .green {
     background-color: rgb(0, 128, 96);
+    width: 20%;
 }
 .red {
     background-color: rgb(241, 48, 48);
+    width: 20%;
 }
