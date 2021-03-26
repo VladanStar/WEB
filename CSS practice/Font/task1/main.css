@@ -1,0 +1,27 @@
+.first {
+    font-size: 50px;
+    line-height: 62px;
+  font-family: 'Raleway', sans-serif;
+   font-weight: 700;
+   font-style: italic;
+}
+.first span {
+    font-family: 'Anton', sans-serif;
+
+}
+
+.second {
+font-family: 'Indie Flower', cursive;
+
+}
+.treci {
+
+   font-family: 'Kiwi Maru', serif;
+}
+.treci span {
+   font-family: 'Syne Mono', monospace;
+        
+}
+.second span {
+    font-family: 'Lobster', cursive;
+}
