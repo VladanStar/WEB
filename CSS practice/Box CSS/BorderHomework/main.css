@@ -1,0 +1,52 @@
+.second {
+  width: 100%;
+  text-align: left;
+  border-top: dashed red;
+  border-bottom: dashed red;
+  border-left: solid red;
+  border-right: solid red;
+}
+.first {
+  width: 100%;
+  text-align: left;
+  border: dotted red;
+  margin: auto;
+}
+.third {
+  width: 100%;
+  text-align: left;
+  border: solid red;
+  margin: auto;
+}
+.fourth {
+  border: 10px;
+  border-style: groove;
+}
+.five {
+  border: solid;
+  border-style: double;
+}
+.six {
+  border: 10px;
+  border-style: inset;
+}
+.seven {
+  border: 10px;
+  border-style: ridge;
+}
+.eight {
+  border: 10px solid;
+  border-style: outset;
+}
+.nine {
+  border: black;
+  border-style: none;
+}
+.ten {
+  border: 10px solid black;
+  border-style: hidden;
+}
+.one-one {
+  border: 10px;
+  border-style: dotted solid solid double;
+}
