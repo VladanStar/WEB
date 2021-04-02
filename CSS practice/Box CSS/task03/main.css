@@ -1,0 +1,39 @@
+.main {
+  width: 960px;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: blueviolet;
+  background-color: burlywood;
+  font-family: "New Tegomin", serif;
+  box-shadow: 10px 10px coral;
+  border: 8px dotted rgba(164, 36, 64, 0.84);
+  border-radius: 40px 38px 40px 40px;
+}
+p {
+  background-color: yellow;
+  border: 5px thick;
+}
+.first {
+  border-color: red;
+  border-style: dashed;
+  width: 300px;
+  display: inline-block;
+  margin-right: 20px;
+}
+.second {
+  border: solid green;
+  width: 400px;
+  display: inline-block;
+  margin-right: 20px;
+}
+.thrid {
+  border-color: red;
+  border-style: dashed;
+  width: 200px;
+  margin-right: 20px;
+  display: inline-block;
+}
