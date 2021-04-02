@@ -1,0 +1,24 @@
+p {
+  background-color: yellow;
+  border: 5px thick;
+}
+.first {
+  border-color: red;
+  border-style: dashed;
+  padding: 50px;
+  width: 300px;
+  margin: 50px;
+}
+.second {
+  border: solid green;
+  padding-top: 50px;
+  width: 400px;
+  margin: auto;
+}
+.thrid {
+  border-color: red;
+  border-style: dashed;
+  padding: 50px;
+  width: 200px;
+  margin-left: 100px;
+}

@@ -1,0 +1,18 @@
+p {
+  background-color: yellow;
+  border: 5px thick;
+}
+.first {
+  border-color: red;
+  border-style: dashed;
+}
+.second {
+  border: solid green;
+}
+.thrid {
+  border-color: red;
+  border-style: dashed;
+}
+.fourth {
+  border: 1px thick gray;
+}
