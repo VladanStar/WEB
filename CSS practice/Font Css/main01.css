@@ -1,0 +1,24 @@
+div {
+  background-color: aquamarine;
+}
+* {
+  font-size: 20px;
+  font-weight: lighter;
+}
+.first {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+.second {
+  font-family: "Dela Gothic One", cursive;
+  font-style: italic;
+}
+.thrid {
+  font-family: "Train One", cursive;
+}
+q {
+  font-family: "Train One", cursive;
+}
+.thrid span {
+  font-weight: bold;
+  font-style: italic;
+}
