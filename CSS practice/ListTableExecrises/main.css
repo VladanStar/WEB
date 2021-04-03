@@ -1,0 +1,41 @@
+.drinks {
+    list-style-type: circle;
+}
+.animals {
+    list-style-type: square;
+}
+.food {
+    list-style-type: upper-alpha;
+}
+.clothes {
+    list-style-type: upper-roman;
+}
+.picture {
+    list-style-image: url("smajli.png");
+    width: 200px;
+} 
+.second {
+    list-style-position: inside;
+    margin: 0%;
+}
+.table {
+    margin: 0 auto;
+}
+.first-row th {
+    background-color: red;
+}
+
+.img img {
+    height: 100px;
+}
+
+td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+tr:nth-child(odd) {
+    background-color: rgb(228, 225, 225);
+}
+table tr:hover {
+    background-color: yellow;
+}

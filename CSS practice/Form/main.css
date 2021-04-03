@@ -1,0 +1,87 @@
+form {
+    width: 35%;
+    margin: 50px auto;
+    background: rgb(240, 233, 233);
+    border-radius: 20px 0 20px 0;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding-left:30px; 
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-top: 8px !important;
+    border: none;
+    box-shadow: 0 0 10px rgb(78, 77, 77);
+}
+
+input[name=name] {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/User_font_awesome.svg/1024px-User_font_awesome.svg.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 4px 4px;
+    font-size: 16px;
+}
+
+input[name=email] {
+    background-image: url('http://www.myiconfinder.com/uploads/iconsets/256-256-2551789035d03d242a37aec568dc8eea-email.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 4px 4px;
+    font-size: 16px;
+}
+
+input[name=phone] {
+    background-image: url('https://cdn2.iconfinder.com/data/icons/picons-essentials/71/mobile-512.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 4px 4px;
+    font-size: 16px;
+}
+
+input[name=address] {
+    background-image: url('https://cdn3.iconfinder.com/data/icons/social-messaging-productivity-4/128/home2-512.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 4px 4px;
+    font-size: 16px;
+}
+
+h1 {
+    margin: 20px 0 0 0 !important;
+    text-align: center;
+    color: rgb(78, 75, 75);
+}
+
+span {
+    color: rgb(224, 177, 88);
+}
+
+button {
+    background: rgb(202, 60, 42);
+    font-size: 12px !important;
+    border-radius: 6px;
+    padding: 10px 30px;
+    color: #fff;
+    border: none;
+    margin-top: 20px !important;
+}
+
+#button {
+    width: 100%;
+    text-align: right;
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: url('cursor.jpg') !important;
+}
