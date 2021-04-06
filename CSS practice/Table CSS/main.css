@@ -1,0 +1,15 @@
+p {
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: non7;
+}
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  height: 210px;
+}
+td,
+th {
+  border: 1px solid black;
+  padding: 10px;
+}

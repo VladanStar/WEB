@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <p>Obicna tabela</p>
+    <table>
+        <tr>
+            <th>RB</th>
+            <th>Student</th>
+            <th>Skolarina</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Petrovic Petar</td>
+            <td>1500</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Markovic Marko</td>
+            <td>1500</td>
+        </tr>
+        <tr>
+            <td>&Sigma;</td>
+            <td></td>
+            <td>3000</td>
+        </tr>
+    </table>
+    <br><br>
+    <p>Spajanje kolona</p>
+    <table>
+        <tr>
+            <td>1.1</td>
+            <td>1.2</td>
+            <td>1.3</td>
+        </tr>
+        <tr>
+            <td>2.1</td>
+            <td rowspan="2">2.2</td>
+            <td>2.3</td>
+        </tr>
+        <tr>
+            <td>3.1</td>
+            <td>3.3</td>
+        </tr>
+    </table>
+    <br><br>
+    <p>Spajanje redova</p>
+    <table class="mergeRows">
+        <tr>
+            <td>1.1</td>
+            <td>1.2</td>
+            <td rowspan="3">1.3</td>
+        </tr>
+        <tr>
+            <td>2.1</td>
+            <td>2.2</td>
+        </tr>
+        <tr>
+            <td>3.1</td>
+            <td>3.2</td>
+        </tr>
+    </table>
+    <br><br>
+    <p>Spajanje kolona i redova</p>
+    <table>
+        <tr>
+            <td>1.1</td>
+            <td>1.2</td>
+            <td rowspan="3">1.3</td>
+        </tr>
+        <tr>
+            <td colspan="2">2.1</td>
+        </tr>
+        <tr>
+            <td>3.1</td>
+            <td>3.2</td>
+        </tr>
+    </table>
+</body>
+
+</html>
