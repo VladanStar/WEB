@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-style: none;
+}
+
+h1 {
+  width: 100%;
+  margin: 20px auto;
+  color: coral;
+  text-align: center;
+}
+.task-position {
+  position: relative;
+  width: 66%;
+  height: auto;
+}
+.img-body {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 33%;
+}
+.task-position img {
+  width: 50%;
+}
+#cica-img {
+  position: relative;
+  top: 50px;
+  left: 100px;
+  margin-bottom: 50px;
+}
+#eva-img {
+  width: 70%;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+#beer-img {
+  position: absolute;
+  bottom: 0px;
+  width: 300px;
+  height: 300px;
+}
+#up {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: yellow;
+  border-radius: 10px;
+  box-shadow: 10px 10px 0px 10px;
+  border-color: violet;
+}
+
+#up a {
+  text-decoration: none;
+  list-style: none;
+  color: red;
+}
