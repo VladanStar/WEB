@@ -1,7 +1,11 @@
 * {
   box-sizing: border-box;
 }
-
+body {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
 .wrapper {
   width: 960px;
   margin-left: auto;
@@ -10,10 +14,13 @@
 
 .navigation {
   width: 960px;
-  background-color: #800000;
-  margin-bottom: 1px;
+  background-color: rgb(211, 81, 81);
+  margin-bottom: 5px;
+  padding: 10px 0px;
 }
-
+.navigation ul a {
+  font-size: 25px;
+}
 .clearfix::before,
 .clearfix::after {
   content: "";
@@ -62,7 +69,7 @@ li a {
 .text {
   width: 300px;
   padding: 15px;
-  background-color: rgb(206, 165, 0);
+  background-color: rgb(231, 189, 22);
   float: right;
 }
 .text a {
