@@ -1,85 +1,85 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .wrapper {
-    width: 960px;
-    margin-left: auto;
-    margin-right: auto;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
 .navigation {
-    width: 960px;
-    background-color: #800000; 
-    margin-bottom: 1px;
+  width: 960px;
+  background-color: #800000;
+  margin-bottom: 1px;
 }
 
 .clearfix::before,
 .clearfix::after {
-    content: "";
-    display: table;
+  content: "";
+  display: table;
 }
 
 .clearfix::after {
-    clear: both;
+  clear: both;
 }
 
 ul li {
-    list-style-type: none;
-    padding: 1px 10px;
-    float: left;
+  list-style-type: none;
+  padding: 1px 10px;
+  float: left;
 }
 
 ul {
-    float: right;
-    padding-right: 15px;
-    
+  float: right;
+  padding-right: 15px;
 }
 
 li a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .svg-images {
-    width: 100%;
+  width: 100%;
 }
 
 .svg-images img {
-    width: 100%;
+  width: 100%;
 }
 
 .image-text-wrapper {
-    width: 32%;
-    float: left;
-    margin: 0 5px;
+  width: 32%;
+  float: left;
+  margin: 0 5px;
 }
 
 .text {
-    width: 30%;
-    padding: 15px;
-    background-color: yellow;
-    float: right;
+  width: 30%;
+  padding: 15px;
+  background-color: yellow;
+  float: right;
 }
-
+.text a {
+  text-decoration: none;
+}
 .third {
-    clear: left;
+  clear: left;
 }
 
 .footer {
-    background-color: #154360;
-    padding: 5px;
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
+  background-color: #154360;
+  padding: 5px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .footer p {
-    width: 960px;
-    margin-right: auto;
-    margin-left: auto;
-    color:white;
+  width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
 }
