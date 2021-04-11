@@ -14,7 +14,7 @@
   height: auto;
   padding: 10px 0;
   margin-bottom: 5px;
-  background-color: rgb(202, 93, 93);
+  background-color: rgb(211, 81, 81);
 }
 .nav ul {
   position: relative;
@@ -54,10 +54,16 @@ article {
   margin: 20px 20px 0 0;
 }
 .side-bar {
-  width: 250px;
+  padding-top: 10px;
+  width: 300px;
   position: absolute;
   top: 5px;
   right: 5px;
+}
+.side-bar ul li a {
+  padding: auto;
+  text-align: justify;
+  padding-top: 10px;
 }
 .nav li {
   float: left;
@@ -102,13 +108,13 @@ article {
 .side-bar ul {
   list-style: none;
   padding: 20px 0 5px 5px;
-  background-color: rgb(228, 228, 0);
+  background-color: rgb(206, 165, 0);
   height: 250px;
 }
 .side-bar ul li {
   margin-bottom: 10px;
   padding: 0 0 5px 5px;
-  border-bottom: 1px solid rgb(148, 148, 28, 0.8);
+  border-bottom: 1px solid rgb(206, 165, 0);
 }
 .side-bar a {
   padding: 5px;
@@ -117,6 +123,13 @@ article {
   text-indent: none;
   color: rgb(34, 34, 34);
   font-size: 20px;
+}
+hr {
+  color: rgb(32, 31, 31);
+}
+a {
+  padding-top:5px ;
+  padding-bottom: 5px;
 }
 .nav li a:hover {
   position: relative;
@@ -149,4 +162,13 @@ footer {
   margin: 0 auto;
   padding: 30px;
   margin-top: 20px; 
+}
+.text {
+  width: 300px;
+  padding: 15px;
+  background-color: rgb(206, 165, 0);
+  float: right;
+}
+.text a {
+  text-decoration: none;
 }
