@@ -75,27 +75,25 @@
             po vertikali treba da bude 5px, a po horizontali 10px. Sadržaj ćelija treba da
             bude centriran po horizontali i vertikali. Font treba da bude podebljan.
         </p>
-        <table border="1px">
+        <table>
             <tr>
-                <td rowspan="4" >A</td>
+                <td class="cel" rowspan="4">A</td>
                 <td>B</td>
-                <td colspan="2">C</td>
+                <td class="cel" colspan="2">C</td>
             </tr>
             <tr>
-                <td>A</td>
-                <td>B</td>
-                <td>C</td>
+                <td colspan="3">D</td>
             </tr>
             <tr>
-                <td colspan="2">D</td>
-                
+                <td colspan="2">E</td>
+                <td rowspan="2">F</td>
             </tr>
             <tr>
-                <td>A</td>
-                <td>B</td>
-                <td>C</td>
+                <td>G</td>
+                <td class="cel">H</td>
             </tr>
         </table>
+
     
         TABELA
     
@@ -105,7 +103,7 @@
             Kada se miš dovede iznad ovih ćelija, treba da promene boju pozadine u #fcc.
         </p>
     
-        <div>
+        <div id="float">
             Ovaj DIV blok identifikujte kao "float". Napravite ID stil za blok koji treba
             da bude fiksno pozicioniran u odnosu na gornji desni ugao prozora,
             i to po 20px naniže i ulevo.
