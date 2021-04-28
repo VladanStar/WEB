@@ -58,7 +58,7 @@ article p {
 @media (min-width: 768px) {
   h1 {
     display: inline-block;
-    float: left;
+    float:left;
     padding-left: 5px;
   }
   header {
