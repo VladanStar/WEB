@@ -4,7 +4,7 @@
     flex-direction: row-reverse;
     width: 40%;
     margin: 100px auto 0 auto;
-    border: 1px solid black;
+    border: 2px solid rgb(241, 132, 132);
     padding: 5px;
     height: 300px;
 }
@@ -45,13 +45,14 @@
 /* TASK 2 */
 
 .container {
-    border: 1px solid brown;
+    border: 2px solid rgb(175, 166, 166);
     margin: 50px auto 0 auto;
     width: 40%;
     height: 300px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-bottom: 50px;
 }
 .yellow_2 {
     background-color: yellow;
@@ -78,7 +79,7 @@
     align-items: center;
 }
 .violet_2 {
-    background-color: violet;
+    background-color: rgb(202, 137, 202);
     width: 130px;
     height: 130px;
     display: flex;
@@ -87,7 +88,7 @@
     
 }
 .lightgrey_2 {
-    background-color: lightgrey;
+    background-color: rgb(202, 157, 157);
     width: 130px;
     height: 130px;
     display: flex;
