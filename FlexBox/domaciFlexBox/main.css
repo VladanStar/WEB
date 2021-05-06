@@ -1,0 +1,101 @@
+  
+.main {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 40%;
+    margin: 100px auto 0 auto;
+    border: 1px solid black;
+    padding: 5px;
+    height: 300px;
+}
+.yellow {
+    display: flex;
+    background-color: yellow;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+}
+.orange {
+    display: flex;
+    background-color: orange;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+}
+.gray {
+    display: flex;
+    background-color: gray;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+}
+.second {
+    background-color: rosybrown;
+    display: flex;
+    flex-grow: 2;
+    justify-content: center;
+    align-items: center;
+}
+.first {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-grow: 1;
+}
+
+/* TASK 2 */
+
+.container {
+    border: 1px solid brown;
+    margin: 50px auto 0 auto;
+    width: 40%;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.yellow_2 {
+    background-color: yellow;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.orange_2 {
+    background-color: orange;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grey_2 {
+    background-color: grey;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.violet_2 {
+    background-color: violet;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.lightgrey_2 {
+    background-color: lightgrey;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.direct {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

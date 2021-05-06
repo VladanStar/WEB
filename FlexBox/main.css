@@ -1,0 +1,28 @@
+main {
+  margin: 40px auto 40px auto;
+  padding: 0px;
+  color: aliceblue;
+  display: flex;
+  width: 80%;
+}
+
+.one {
+  flex: 1;
+  padding: 20px;
+  background: aqua;
+}
+.two {
+  flex: 1;
+  background: bisque;
+  display: flex;
+  flex-direction: column;
+}
+.three {
+  background: blueviolet;
+  flex-basis: 50%;
+}
+.fourth {
+  background: cadetblue;
+  flex-basis: 50%;
+  align-items: center;
+}
