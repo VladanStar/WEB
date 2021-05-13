@@ -1,0 +1,14 @@
+p, article {
+  color: lime;
+  font-size: 22px;
+  background-color: rgba(128, 128, 128, 0.671);
+  margin: 30px;
+  padding: 20px;
+  width: 31.25%;
+  border: 5px double #cc6f7e; }
+
+article {
+  width: 46.875%;
+  background-color: blue; }
+
+/*# sourceMappingURL=main.css.map */

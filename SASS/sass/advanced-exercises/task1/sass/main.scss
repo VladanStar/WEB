@@ -1,0 +1,32 @@
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+    margin: 30px;
+    background-color: orange;
+    &:visited {
+        background-color: orange;
+    } 
+    &:active {
+        background-color: yellow;
+    }
+    &:link {
+        background-color: green;
+    }
+}
+ul li a {
+    text-decoration: none;
+    &:visited {
+        background-color:orange;
+        color: black;
+    } 
+    &:active {
+        background-color:yellow;
+    }
+    &:link {
+        background-color:green;
+    }
+}
+.important {
+    font-weight: bold;
+}

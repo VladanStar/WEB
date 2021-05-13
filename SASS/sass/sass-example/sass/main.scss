@@ -1,0 +1,35 @@
+
+$red-color: rgb(255, 0, 0); /* mozemo da nazovemo kako hocemo*/
+$blue-color: rgb(0, 0, 255);
+$common-font-size: 18px;
+$common-margin: 16px;
+
+.first { 
+    border: 1px solid black; //ovde pisem ono sto zelim samo za element sa klasom .first
+    margin: $common-margin;
+    p {
+        color: $red-color;
+        font-size: $common-font-size;
+    }
+}
+
+.second { 
+    border: 1px solid black; 
+    p {
+        color: $blue-color;
+    }
+    
+}
+
+.main-list ul li a {} //ranije smo ovako pisali
+
+.main-list {
+    background-color: green;
+    ul {
+        li{
+            a {
+                color: red;
+            }
+        }
+    }
+}

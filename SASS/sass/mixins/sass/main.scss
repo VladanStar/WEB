@@ -1,0 +1,26 @@
+@mixin text-shadow($shadow) {
+    -webkit-text-shadow: $shadow;
+    -moz-text-shadow: $shadow;
+    -ms-text-shadow: $shadow;
+    text-shadow: $shadow;
+}
+
+@mixin box-shadow($box-shadow) {
+    -webkit-box-shadow: $box-shadow;
+    -moz-box-shadow: $box-shadow;
+    -ms-box-shadow: $box-shadow;
+    box-shadow: $box-shadow;
+}
+
+ul {
+    list-style: none;
+    li  {
+        width: fit-content;
+        border:1px solid black;
+        @include box-shadow(2px 2px 1px pink);
+    }
+}
+
+h1 {
+    @include text-shadow(2px 1px green);
+}

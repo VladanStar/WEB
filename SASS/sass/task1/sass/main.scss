@@ -1,0 +1,19 @@
+$color: lime;
+$main-font: 22px;
+$gray-backgr: rgba(128, 128, 128, 0.671);
+
+p {
+    color: $color;
+    font-size: $main-font;
+    background-color: $gray-backgr;
+    margin: 30px;
+    padding: 20px;
+    width: 300px / 960px * 100%;
+    border: 5px double rgb(204, 111, 126);
+}
+
+article {
+    @extend p;
+    width: 450px / 960px * 100%;
+    background-color: blue;
+}

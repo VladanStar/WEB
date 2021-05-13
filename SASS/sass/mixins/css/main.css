@@ -1,0 +1,17 @@
+ul {
+  list-style: none; }
+  ul li {
+    width: fit-content;
+    border: 1px solid black;
+    -webkit-box-shadow: 2px 2px 1px pink;
+    -moz-box-shadow: 2px 2px 1px pink;
+    -ms-box-shadow: 2px 2px 1px pink;
+    box-shadow: 2px 2px 1px pink; }
+
+h1 {
+  -webkit-text-shadow: 2px 1px green;
+  -moz-text-shadow: 2px 1px green;
+  -ms-text-shadow: 2px 1px green;
+  text-shadow: 2px 1px green; }
+
+/*# sourceMappingURL=main.css.map */

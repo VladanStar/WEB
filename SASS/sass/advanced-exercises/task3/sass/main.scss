@@ -1,0 +1,22 @@
+p {
+    color: red;
+}
+
+$content-width: 300px;
+$main-padding: 20px;
+$main-border: 5px;
+
+.item-1 {
+    box-sizing: border-box;
+    width: $content-width;
+    padding: $main-padding;
+    border: $main-border solid black;
+}
+
+@function content-to-border-box($width) {
+    @return $width + (2 * $main-padding) + (2 * $main-border);
+}
+
+.item-2 {
+    width: content-to-border-box($content-width);
+}

@@ -1,0 +1,26 @@
+$main-background: rgb(193,148,106);
+$color1: rgb(64,93,39);
+
+@mixin paragraph-mix {
+    background-color: $main-background;
+    color: $color1;
+    padding: 20px;
+    margin: 10px;
+    float: left;  
+    width: 250px / 960px * 100%;
+}
+
+.first-ph {
+    @include paragraph-mix();
+    border: 1px solid red;
+}
+
+.second-ph {
+    @include paragraph-mix();
+    border: 1px solid blue;
+}
+
+.third-ph {
+    @include paragraph-mix();
+    border: 1px solid green;
+}

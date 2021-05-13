@@ -1,0 +1,19 @@
+/* mozemo da nazovemo kako hocemo*/
+.first {
+  border: 1px solid black;
+  margin: 16px; }
+  .first p {
+    color: red;
+    font-size: 18px; }
+
+.second {
+  border: 1px solid black; }
+  .second p {
+    color: blue; }
+
+.main-list {
+  background-color: green; }
+  .main-list ul li a {
+    color: red; }
+
+/*# sourceMappingURL=main.css.map */

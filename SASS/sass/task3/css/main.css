@@ -1,0 +1,28 @@
+.first-ph {
+  background-color: #c1946a;
+  color: #405d27;
+  padding: 20px;
+  margin: 10px;
+  float: left;
+  width: 26.0416666667%;
+  border: 1px solid red; }
+
+.second-ph {
+  background-color: #c1946a;
+  color: #405d27;
+  padding: 20px;
+  margin: 10px;
+  float: left;
+  width: 26.0416666667%;
+  border: 1px solid blue; }
+
+.third-ph {
+  background-color: #c1946a;
+  color: #405d27;
+  padding: 20px;
+  margin: 10px;
+  float: left;
+  width: 26.0416666667%;
+  border: 1px solid green; }
+
+/*# sourceMappingURL=main.css.map */

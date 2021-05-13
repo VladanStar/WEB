@@ -1,0 +1,22 @@
+h1 {
+    color:rgb(209, 123, 137);
+}
+.main-table {
+    border: 1px solid black;
+    th {
+        @extend .main-table;
+    }
+    td {
+        @extend .main-table;
+        border-color: rgb(209, 123, 137);
+    }
+}
+
+@function table-width($width, $col) {
+    @return $width / $col;
+}
+
+th, td {
+    width: table-width(600px, 4);
+    text-align: center;
+}

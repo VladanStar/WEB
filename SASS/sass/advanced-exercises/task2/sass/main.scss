@@ -1,0 +1,32 @@
+p {
+    color: black;
+}
+
+@for $i from 1 through 4 {
+    .parag-#{$i} {font-size: 14px + $i + $i}
+}
+
+@mixin bckg-color($number) {
+    @if($number == 1) {
+        background-color: pink;
+    } @else if ($number ==2) {
+        background-color: yellowgreen;
+    } @else if ($number == 3) {
+        background-color: wheat;
+    } @else if ($number == 4) {
+        background-color: brown;
+    }
+}
+
+.parag-1 {
+    @include bckg-color(1);
+}
+.parag-2 {
+    @include bckg-color(2);
+}
+.parag-3 {
+    @include bckg-color(3);
+}
+.parag-4 {
+    @include bckg-color(4);
+}

@@ -1,0 +1,13 @@
+p {
+  color: red; }
+
+.item-1 {
+  box-sizing: border-box;
+  width: 300px;
+  padding: 20px;
+  border: 5px solid black; }
+
+.item-2 {
+  width: 350px; }
+
+/*# sourceMappingURL=main.css.map */
