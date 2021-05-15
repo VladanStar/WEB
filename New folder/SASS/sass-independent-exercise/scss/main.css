@@ -1,0 +1,451 @@
+@charset "UTF-8";
+/******************************************
+                  FONTS
+*******************************************/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/******************************************
+                  VARIABLES
+*******************************************/
+/******************************************
+                  MIXINS
+*******************************************/
+/******************************************
+                  STYLES
+*******************************************/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: #363232;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: "Roboto", sans-serif;
+  color: bisque;
+}
+
+body h1 {
+  font-size: 3rem;
+}
+
+body p {
+  font-size: 1.5rem;
+}
+
+.main-header {
+  width: 100%;
+}
+
+.main-header .nav-wrapper {
+  margin: 0 auto;
+}
+
+.main-header .nav-wrapper .navbar {
+  background-color: bisque;
+  min-height: 140px;
+  outline: 1px dotted red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.main-header .nav-wrapper .navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+}
+
+.main-header .nav-wrapper .navbar ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 3rem;
+}
+
+.main-header .nav-wrapper .navbar ul li:first-of-type {
+  margin-left: 0;
+}
+
+.main-header .nav-wrapper .navbar ul li a {
+  text-align: center;
+  display: block;
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+  color: bisque;
+  font-size: 1.5rem;
+  background-color: #363232;
+  _outline: 1px dotted red;
+  border: 2px solid #363232;
+  border-radius: 6%;
+}
+
+.main-header .nav-wrapper .navbar ul li a:hover {
+  background-color: #ffbf5f;
+  color: #363232;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main-header .header-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main-header .header-wrapper h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.main-header .header-wrapper p {
+  text-indent: 2rem;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  margin: 50px auto;
+  background-color: #ffbf5f;
+  color: #363232;
+  text-align: center;
+  cursor: pointer;
+  -webkit-border-radius: 50%;
+  -moz-bodred-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.circle:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  background-color: rgba(255, 191, 95, 0.4);
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.container .flex-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container main {
+  width: 57.75%;
+}
+
+.container aside {
+  width: 37.83333%;
+  padding-left: 5%;
+}
+
+.container h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.container h3 {
+  font-size: 1.6rem;
+}
+
+.container .extend {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .extend a {
+  display: block;
+  text-decoration: none;
+}
+
+.container .extend .first, .container .extend .second, .container .extend .third {
+  width: 33.33333%;
+  background-color: #ffbf5f;
+  text-align: center;
+  padding: 2%;
+  border-radius: 5%;
+}
+
+.container .extend .first a, .container .extend .second a, .container .extend .third a {
+  color: #363232;
+  border-radius: 5%;
+}
+
+.container .extend .first a:hover, .container .extend .second a:hover, .container .extend .third a:hover {
+  background-color: #ffd392;
+}
+
+.container .extend .second {
+  background-color: #363232;
+}
+
+.container .extend .second a {
+  color: #ffbf5f;
+}
+
+.container .extend .second a:hover {
+  background-color: #504b4b;
+}
+
+.container .extend .third {
+  background-color: #ffbf5f;
+}
+
+.mix-fun header {
+  background-color: bisque;
+  padding: 2rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.mix-fun header ol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mix-fun header ol li {
+  margin: 2%;
+}
+
+.mix-fun header ol li a {
+  display: block;
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 50%;
+  -moz-bodred-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  line-height: 100px;
+  font-size: 2rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.mix-fun header ol li:nth-child(2n + 1) a {
+  background-color: #ffbf5f;
+  color: #363232;
+  border: 2px solid #363232;
+}
+
+.mix-fun header ol li:nth-child(2n + 1) a:hover {
+  background-color: #363232;
+  color: #ffbf5f;
+  border: 2px solid #ffbf5f;
+}
+
+.mix-fun header ol li:nth-child(2n) a {
+  background-color: #363232;
+  color: #ffbf5f;
+  border: 2px solid #ffbf5f;
+}
+
+.mix-fun header ol li:nth-child(2n) a:hover {
+  background-color: #ffbf5f;
+  color: #363232;
+  border: 2px solid #363232;
+}
+
+.mix-fun2 header {
+  background-color: #666;
+  padding: 3rem 0;
+  display: block;
+  margin: 0 auto;
+}
+
+.mix-fun2 header ol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mix-fun2 header ol li {
+  margin: 2%;
+}
+
+.mix-fun2 header ol li a {
+  display: block;
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 50%;
+  -moz-bodred-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  line-height: 100px;
+  font-size: 2rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.mix-fun2 header ol li:nth-child(2n + 1) a {
+  background-color: bisque;
+  color: #363232;
+  border: 2px solid #363232;
+}
+
+.mix-fun2 header ol li:nth-child(2n + 1) a:hover {
+  background-color: #363232;
+  color: bisque;
+  border: 2px solid bisque;
+}
+
+.mix-fun2 header ol li:nth-child(2n) a {
+  background-color: #363232;
+  color: bisque;
+  border: 2px solid bisque;
+}
+
+.mix-fun2 header ol li:nth-child(2n) a:hover {
+  background-color: bisque;
+  color: #363232;
+  border: 2px solid #363232;
+}
+
+.mix-fun3 header {
+  background-color: #363232;
+  padding: 1rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.mix-fun3 header ol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mix-fun3 header ol li {
+  margin: 2%;
+}
+
+.mix-fun3 header ol li a {
+  display: block;
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 50%;
+  -moz-bodred-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  line-height: 100px;
+  font-size: 2rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.mix-fun3 header ol li:nth-child(2n + 1) a {
+  background-color: #ffbf5f;
+  color: bisque;
+  border: 2px solid bisque;
+}
+
+.mix-fun3 header ol li:nth-child(2n + 1) a:hover {
+  background-color: bisque;
+  color: #ffbf5f;
+  border: 2px solid #ffbf5f;
+}
+
+.mix-fun3 header ol li:nth-child(2n) a {
+  background-color: bisque;
+  color: #ffbf5f;
+  border: 2px solid #ffbf5f;
+}
+
+.mix-fun3 header ol li:nth-child(2n) a:hover {
+  background-color: #ffbf5f;
+  color: bisque;
+  border: 2px solid bisque;
+}
+
+/*uz pomoć "%" umesto "." kao selektora, učinićemo da se ova klasa ne vidi u konzoli*/
+.container .extend .first, .container .extend .second, .container .extend .third, .mix-fun header ol, .mix-fun2 header ol, .mix-fun3 header ol {
+  margin: 0;
+  list-style: none;
+}
+/*# sourceMappingURL=main.css.map */
