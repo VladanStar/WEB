@@ -1,0 +1,5 @@
+@mixin paragraph-default ($space) {
+    margin: $space;
+    padding: $space;
+    border: 1px solid black;
+}

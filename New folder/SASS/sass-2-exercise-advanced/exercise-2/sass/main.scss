@@ -1,0 +1,31 @@
+/**************************
+            VARIABLES
+**************************/
+@import "partials/variables";
+
+/**************************
+            MIXINS
+**************************/
+@import "partials/mixins";
+
+/**************************
+            STYLES
+**************************/
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  height: 100%;
+  font-size: $font-size-root;
+  @include bkg-color(2);
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  @include paragraph-enlarge;
+  @include paragraph-color(1, 2);
+  @include paragraph-color(2, 3);
+  @include paragraph-color(3, 1);
+  @include paragraph-color(4, 4);
+}

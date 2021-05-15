@@ -1,0 +1,13 @@
+.first, .second, .third {
+  border: 3px solid red;
+  padding: 10px;
+  background-color: rosybrown;
+  width: 62.5%; }
+
+.second {
+  border-color: blue; }
+
+.third {
+  border-color: green; }
+
+/*# sourceMappingURL=style.css.map */

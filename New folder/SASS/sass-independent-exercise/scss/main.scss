@@ -1,0 +1,25 @@
+/******************************************
+                  FONTS
+*******************************************/
+@import "partials/fonts";
+/******************************************
+                  VARIABLES
+*******************************************/
+@import "partials/_variables.scss";
+/******************************************
+                  MIXINS
+*******************************************/
+@import "partials/mixins";
+/******************************************
+                  STYLES
+*******************************************/
+@import "partials/global-styles";
+@import "partials/main-header";
+@import "partials/circle";
+@import "partials/main-content";
+
+/*uz pomoć "%" umesto "." kao selektora, učinićemo da se ova klasa ne vidi u konzoli*/
+%list-reset {
+  margin: 0;
+  list-style: none;
+}

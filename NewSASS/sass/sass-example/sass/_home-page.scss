@@ -1,0 +1,42 @@
+.first {
+    margin: $common-margin;
+    border: 1px solid black;
+    p {
+        @include paragraph-default(10px);
+        color: $crvena;
+        font-size: $common-font-size;
+    }
+}
+
+.second {
+    background-color: $brown;
+    border: 1px solid black;
+    p {
+        @include paragraph-default(10px);
+        color: $zelena;
+        &:hover {
+            color: black;
+        }
+    }
+
+}
+
+.messages {
+    .message {
+        border: 1px solid black;
+        padding: 10px;
+        color: black;
+    }
+    .success {
+        @extend .message;
+        border-color: green;
+    }
+    .error {
+        @extend .message;
+        border-color: red;
+    }
+    .warning {
+        @extend .message;
+        border-color: blue;
+    }
+}

@@ -1,0 +1,18 @@
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/global-styles";
+.container {
+  width: 80%;
+  margin: 0 auto;
+  .list-wrapp {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    @import "partials/list-a-styles";
+  }
+}
+%list-reset {
+  list-style: none;
+  text-align: center;
+}

@@ -1,0 +1,7 @@
+@mixin box-shadow ($box-sh) {
+    box-shadow: $box-sh;
+}
+
+@mixin text-shadow ($text-sh) {
+    text-shadow: $text-sh;
+}

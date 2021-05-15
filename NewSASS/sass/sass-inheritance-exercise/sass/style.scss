@@ -1,0 +1,14 @@
+.first {
+    border: 3px solid red;
+    padding: 10px;
+    background-color: rosybrown;
+    width: 600px / 960px * 100%;
+}
+.second {
+    @extend .first;
+    border-color: blue;
+}
+.third {
+    @extend .first;
+    border-color: green;
+}

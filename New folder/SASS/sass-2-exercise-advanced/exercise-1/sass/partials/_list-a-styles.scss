@@ -1,0 +1,13 @@
+ul {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  li {
+    @extend %list-reset;
+    width: 100%;
+    margin-top: 10%;
+    _outline: 1px dotted red;
+    @include mix-color($a-color-passive, $a-color-active, $a-color-visited);
+  }
+}

@@ -1,0 +1,33 @@
+.first {
+  margin: 16px;
+  border: 1px solid black; }
+  .first p {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    color: red;
+    font-size: 20px; }
+
+.second {
+  background-color: chocolate;
+  border: 1px solid black; }
+  .second p {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    color: lime; }
+    .second p:hover {
+      color: black; }
+
+.messages .message, .messages .success, .messages .error, .messages .warning {
+  border: 1px solid black;
+  padding: 10px;
+  color: black; }
+.messages .success {
+  border-color: green; }
+.messages .error {
+  border-color: red; }
+.messages .warning {
+  border-color: blue; }
+
+/*# sourceMappingURL=style.css.map */
