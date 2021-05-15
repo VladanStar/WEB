@@ -1,7 +1,7 @@
 .first, .second, .third {
   border: 3px solid red;
   padding: 10px;
-  background-color: rosybrown;
+  background-color: #ceb62d;
   width: 62.5%;
 }
 
