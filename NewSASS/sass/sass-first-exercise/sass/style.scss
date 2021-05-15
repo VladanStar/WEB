@@ -80,10 +80,10 @@ table {
   }
 }
 
-p#footer {
+#footer {
   margin-top: 100px;
   color: $text-color;
   border-top: $border;
   padding-top: 20px;
-  @include box-shadow(5px 5px 7px 12px rgba(0, 0, 0, 0.21));
+  @include box-shadow(5px 5px 7px 12px rgba(156, 134, 134, 0.91));
 }
