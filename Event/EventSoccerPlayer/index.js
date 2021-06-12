@@ -6,8 +6,8 @@ var movement = true;
 
 field.addEventListener('click', function (e){
     if(movement === true) {
-    player.style.top = (e.clientY -40) +'px';
-    player.style.left = (e.clientX -40) +'px';
+    player.style.top = (e.clientY) +'px';
+    player.style.left = (e.clientX) +'px';
     }
 
 })
