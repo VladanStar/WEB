@@ -1,0 +1,21 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.path {
+  background-color: #0212fe;
+  background-image: url("./SuperMarioAssets/bg.jpg");
+  background-position: 0 bottom;
+  background-repeat: repeat-x;
+  height: 100%;
+  width: 100%;
+}
+
+.mario {
+  position: absolute;
+  height: 150px;
+  bottom: 80px;
+  left: 40%;
+}

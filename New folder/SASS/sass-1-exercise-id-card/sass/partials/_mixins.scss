@@ -1,6 +1,0 @@
-@mixin text-shadow($hor-shadow, $ver-shadow, $blur, $color-shadow) {
-  text-shadow: $hor-shadow $ver-shadow $blur $color-shadow;
-}
-@mixin box-shadow($h-offset, $v-offset, $blur, $spread, $color) {
-  box-shadow: $h-offset $v-offset $blur $spread $color;
-}

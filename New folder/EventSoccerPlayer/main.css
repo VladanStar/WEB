@@ -1,0 +1,33 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+
+.field {
+    background-image: url('./img/field.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100%;
+    width: 100%;           
+}
+
+.player {
+    width: 80px;
+    position: absolute;
+    top: 0;
+    left: 200px;
+}
+
+.stop {
+    position: absolute;
+    bottom: 0;
+    right: 200px;
+    padding: 5px 10px;
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

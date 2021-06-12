@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+          background-color: #0ece37;
+        }
+        .cancel {
+          background-color: #F4F4F4;
+        }
+
+        .redButton {
+          background-color: #c0392b;
+        }
+
+        .yellowButton {
+          background-color: #febe28;
+          
+        }
+        .button {
+          color: white;
+          border: none;
+          border-radius: 3px;
+          display: block;
+          padding: 10px 20px;
+          margin: 10px auto;
+        }
+
+
+
+
+      </style>
+    </head>
+    <body>
+      <input class='redButton button' type="button" value="Toggle Background" onclick="changeColor()" />
+      <input class='yellowButton button' type="button" value="Turn Off" onclick="turnOff()" id="off" />
+      
+      <script>
+             
+        
+        function changeColor() {
+          var bodyNode = document.querySelector("body");
+          bodyNode.classList.toggle('cancel');
+          
+        }
+
+        function turnOff() {
+        var bodyNode = document.querySelector("body");
+        var input = document.querySelector("input");
+        var input1 = document.querySelector('#off');
+        
+        if(input.getAttribute('onclick') !== null) {
+          
+          input.removeAttribute("onclick");
+          input1.value = 'Turn On';
+          console.log(input.getAttribute('onclick'));
+        } else {
+          input.setAttribute('onclick' , 'changeColor()')
+          input1.value = 'Turn Off';
+        }
+        }
+
+      </script>
+</body>
+</html>
