@@ -1,4 +1,4 @@
-var inrterval;
+var interval;
 var body = document.querySelector('body');
 var automatic = document.querySelector("#turn-off-btn");
 
@@ -15,6 +15,6 @@ var turnOffHandler = function () {
 else {
     automatic.textContent = "Turn On";
     clearInterval(interval);
-    inrterval = undefined;
+    interval = undefined;
 }
 }
