@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="./style.css" type="text/css">
+
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="navigation">
+        <ul>
+            <li>Home</li>
+            <li class="active">Page</li>
+            <li>Contact</li>
+            <li>About</li>
+            <li>Blog</li>
+        </ul>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js">
+        </script>
+    <script >
+        $(document).ready(function () {
+                console.log("Hello world");
+            });
+
+            var items = $('li');
+            items.css({
+                'background-color':'#fff000'
+            })
+    </script>
+
+</body>
+
+
+</html>

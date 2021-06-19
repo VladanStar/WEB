@@ -1,0 +1,15 @@
+.redBorder {
+    border-bottom: 1px solid red;
+}
+
+.text{
+    text-transform:uppercase;
+}
+
+.fontColor{
+    color:red;
+}
+
+.bgcolor{
+    background-color:lightpink;
+}
