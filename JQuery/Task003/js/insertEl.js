@@ -30,7 +30,7 @@ $(function() {
   };
 
   setInterval(
-    $("img").each(function( element) {
+    $("img").each(function(index, element) {
       var ran = randomNumb();
       $(element).css("width", ran + "px");
     }),
