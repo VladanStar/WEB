@@ -11,7 +11,7 @@ $(function () {
     "./images/player9.jpg",
     "./images/player10.jpg",
     "./images/player11.jpg",
-    "./images/player12.jpg",
+    "./images/player13.jpg",
   ];
 
   for (var i = 0; i < images.length; i++) {
@@ -37,12 +37,20 @@ $(function () {
     1000
   );
  
-  var $imgSelected = $("img");
-  $imgSelected.each(function () {
-    if ($(this).width() < 300) {
-      $(this).addClass("border");
-    } else {
-      return true;
-    }
-  });
+  // var $imgSelected = $("img");
+  // $imgSelected.each(function () {
+  //   if ($(this).width() < 300) {
+  //     $(this).addClass("border");
+  //   } else {
+  //     return true;
+  //   }
+  // });
+
+  $('img').each(function (index, element) {
+        var randomNum = 500 * Math.random();
+       $(element).css('width', randomNum + 'px');
+        if (randomNum > 200) {
+             $(this).css('border', '5px solid green');
+       }
+     })
 });
