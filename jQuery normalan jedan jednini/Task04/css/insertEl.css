@@ -1,0 +1,14 @@
+img {
+  width: 200px; }
+
+h1 {
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+div {
+  text-align: center; }
+
+/*# sourceMappingURL=insertEl.css.map */
+.border {
+  border: 10px solid greenyellow;
+}
