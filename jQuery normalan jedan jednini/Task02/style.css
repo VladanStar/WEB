@@ -1,0 +1,11 @@
+li a {
+    text-decoration: none;
+}
+
+.bottom-border {
+    border-bottom: 2px black solid;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
