@@ -40,7 +40,8 @@
   }
   
   #country {
-    color: blue;
+    color:red;
+    font-weight: bold;
     font-size: 2rem;
   }
   input {
