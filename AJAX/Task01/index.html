@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-<<<<<<< HEAD
+
     <title>Simple XML Page</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
@@ -21,97 +21,5 @@
     </div>
     <script src='./js/main.js'></script>
     
-=======
-    <title>AJAX JSON</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
-    <script src="assets/js/jquery.min.js"></script>
-</head>
-<body>
-    <h1>Osnovi programiranja u JavaScript</h1>
-    <h2>JQuery -AJAX</h2>
-    <p id="demo"></p>
-    <button id="btnProducts">Products</button>
-    <script>
-        $(document).ready(function(){
-            // Na klik dugmeta sa ID-em btnProducts
-            $('#btnProducts').click(function(){
-                // Uzimamo uz pomoc ajaxa fajl iz "Assets/Files/products.json"
-                $.ajax({
-                    //Definisemo url koji ide do naseg foldera, isto bismo i za neki server 
-                    url:"assets/files/products.json",
-                    //Definisemo tip podataka koji cemo da primimo
-                    dataType:"json",
-                    success:function(proizvodi){
-                        // Kada nam stignu proizvodi prvo cemo da pozovemo 
-                        //funkciju koja vraca proizvode
-                        let suppliers = ucitajDobavljace();
-                        //Kada smo dobili dobavljace pozivamo f-ju koja ce nam ispisati proizvode
-                        prikaziListuProizvoda(proizvodi.value,suppliers); 
-                    }
-                });
-            });
-            function prikaziListuProizvoda(proizvodi, dobavljaci){
-                // Prolazi,o kroz listu proizvoda
-                for(let index =0; index<proizvodi.length;index++){
-                    //Cuvamo proizvod
-                    const proizvod = proizvodi[index];
-                    //Pozivamo f-ju koja ce nam vratiti ime dobavljaca za trenutan proizvod
-                    const imeDobavljaca = vratitiImeDobavljaca(proizvod,dobavljaci);
-                    // Kreiramo jedan div na isti nacin mozemo i p img itd.
-                    $('<div/>',
-                    //Kao objekat definisemo atribute i dogadjaje
-                    {
-                        // Dodajemo ime klase "'lista proizvoda"
-                        class:'listaProizvoda',
-                        // Kao text pisemo ime proizvoda
-                        text:proizvod.ProductName,
-                        //Definisemo sta ce se desiti na klik ovog diva-a
-                        click:function(){
-                            // Ispisujemo kao alert ime dobavljaca tj ime kompanije
-                            alert(imeDobavljaca);
-                        }
-                        // Dodajemo kreiran div u html sa ID-em "demo"
-
-                    }).appendTo('#demo');
-                    console.log(proizvod);
-                }
-            }
-            function vratitiImeDobavljaca(proizvod, dobavljaci){
-                // Polazimo kroz 
-                for ( let index =0; index<dobavljaci.length;index++){
-                    //cuvamo dobavljaca
-                    const dobavljac = dobavljaci[index];
-                    // ako je id trenutnog dobavljaca jednak 
-                    //ID-u dobavljaca u proizvodu koji je prosledjen
-                    if(dobavljac.SupplierID == proizvod.SupplierID){
-                        return dobavljac.CompanyName;
-                    }
-                }
-            }
-                    function ucitajDobavljace() {
-                // Definisemo promenljivu u koju cmeo da spakujemo dobavljace
-                // Ne moramo da setujem na null
-                let listaDobavljaca = null;
-                $.ajax({
-                    //  Uzimamo dobavljace iz fajla
-                    url: "assets/files/supplers.json",
-                    dataType: "json",
-                    // NAvodimo da ceo Ajax request nije asinhron
-                    // Ako je asinhrono kod ce da nastavi da se izvrsava i vratice null za listaDobavljaca
-                    // AKo je sinhrono nece da odradi "return" pre nego sto dobijemo podatke
-                    async: false,
-                    success: function (suppliers) {
-                        // Cuvamo dobijene podatek u promenljivu listaDobavljaca
-                        listaDobavljaca = suppliers;
-                    }
-                })
-                //  Vracamo listaDobavljaca
-                return listaDobavljaca.value;
-            }
-        });
-        </script>
->>>>>>> 3bfe52a4c3fb70c84d623304936845f975c38b8c
 </body>
 </html>
