@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 5rem;
+    background-color: skyblue;
+    height: 100vh;
+  }
+  
+  h2 {
+    color: blue;
+  }
+  
+  .label {
+    color: blue; 
+    padding: 10px;
+    margin:  25px auto;
+  }
+  
+  #searchIP {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  #button {
+    padding: 10px 50px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: blue;
+  }
+  
+  #country {
+    color: blue;
+    font-size: 2rem;
+  }
+  input {
+      margin: 30px auto;
+  }
