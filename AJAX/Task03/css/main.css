@@ -89,24 +89,4 @@ main {
   color: #253031;
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    font-size: 10px;
-  }
-  .response-box a {
-    font-size: 60%;
-  }
-  header {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-  input#search {
-    margin: 2rem 0;
-    width: 50%;
-  }
-  #logo img {
-    margin: 0;
-  }
-}
+

@@ -9,6 +9,9 @@ $searchInput.keydown(function (e) {
       type: "GET",
       dataType: "json",
     }).done(function (response) {
+      if (response.length == 0) {
+        $responseBox.text("No resutls match")
+      }
       console.log(response);
       response.items.forEach((element) => {
         let $responseBox = $("<div>");
