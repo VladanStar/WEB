@@ -1,19 +1,19 @@
 /********************       Creating landing page       **************************/
-let input = document.querySelector('.form-control');
-let div = document.querySelector('.row');
+
+let input = document.querySelector(".form-control");
+let div = document.querySelector(".row");
 
 let request = new XMLHttpRequest();
 request.open("GET", "http://api.tvmaze.com/shows");
 request.send();
 
-request.onload = function(){
+request.onload = function() {
     let data = JSON.parse(request.responseText);
     console.log(data);
-    data.sort((a,b) =>{
-        if(a.rating.average >b.rating.average){
-            return-1;
-        }
-        else{
+    data.sort((a, b) => {
+        if (a.rating.average > b.rating.average) {
+            return -1;
+        } else {
             return 1;
         }
     });
@@ -39,3 +39,31 @@ request.onload = function(){
     }
 };
 
+/********************       Creating dropdown menu       **************************/
+
+let searchDiv = document.querySelector(".form-inline");
+let ulSearch = document.createElement("ul");
+ulSearch.className = "searcher";
+
+let search = function() {
+    let request = new XMLHttpRequest();
+    request.open("GET", `http://api.tvmaze.com/search/shows?q=${input.value}`);
+    request.send();
+
+    request.onload = function() {
+        let data = JSON.parse(request.responseText);
+        console.log(data);
+        searchDiv.appendChild(ulSearch);
+        ulSearch.innerHTML = "";
+        for (let i = 0; i < data.length; i++) {
+            let li = document.createElement("li");
+            let link = document.createElement("a");
+            link.setAttribute("href", `profile.html?id=${data[i].show.id}`)
+            link.setAttribute("target", "_blank")
+            li.textContent = data[i].show.name;
+            link.appendChild(li)
+            ulSearch.appendChild(link);
+        }
+    }
+}
+input.addEventListener("keyup", search);
